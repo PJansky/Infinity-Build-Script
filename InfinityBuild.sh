@@ -16,7 +16,8 @@ APIUTILS='app/src/main/java/ml/docilealligator/infinityforreddit/utils/APIUtils.
 
 sed -i 's/NOe2iKrPPzwscA/'$APIKEY'/g' $APIUTILS
 sed -i 's+infinity://localhost+http://127.0.0.1+g' $APIUTILS
-sed -i 's+android:ml.docilealligator.infinityforreddit:v6.2.5 (by /u/Hostilenemy)+android:personal-app:0.0.1 (by /u/'"$USERNAME"'+g' $APIUTILS
+sed -i 's+android:ml.docilealligator.infinityforreddit:+android:personal-app:'+g $APIUTILS
+sed -i 's+Hostilenemy+Throwaway68252455'+g $APIUTILS
 
 ## Add Keystore
 wget https://github.com/TanukiAI/Infinity-keystore/raw/main/Infinity.jks
